@@ -11,4 +11,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\shared\Recipe.Exceptions\Recipe.Exceptions.csproj" />
+    <ProjectReference Include="..\Recipe.Application\Recipe.Application.csproj" />
+    <ProjectReference Include="..\..\shared\Recipe.Communication\Recipe.Communication.csproj" />
+  </ItemGroup>
+
 </Project>
