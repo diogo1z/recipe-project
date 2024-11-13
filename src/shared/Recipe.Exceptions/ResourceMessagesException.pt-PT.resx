@@ -118,10 +118,10 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <data name="AT_LEAST_ONE_INGREDIENT" xml:space="preserve">
-    <value>Observe que é necessário pelo menos um ingrediente.</value>
+    <value>Note-se que é necessário pelo menos um ingrediente.</value>
   </data>
   <data name="AT_LEAST_ONE_INSTRUCTION" xml:space="preserve">
-    <value>Certifique-se de que haja pelo menos uma instrução fornecida para a receita.</value>
+    <value>Certifique-se de que é fornecida pelo menos uma instrução para a receita.</value>
   </data>
   <data name="CODE_INVALID" xml:space="preserve">
     <value>Código inválido.</value>
@@ -133,43 +133,43 @@
     <value>O valor de tempo de preparo fornecido não é suportado.</value>
   </data>
   <data name="DIFFICULTY_LEVEL_NOT_SUPPORTED" xml:space="preserve">
-    <value>O nível de dificuldade especificado para a receita não é compatível.</value>
+    <value>O nível de dificuldade especificado para a receita não é suportado.</value>
   </data>
   <data name="DISH_TYPE_NOT_SUPPORTED" xml:space="preserve">
-    <value>O tipo de prato escolhido não é suportado.</value>
+    <value>O tipo de prato selecionado não é suportado.</value>
   </data>
   <data name="DUPLICATED_INGREDIENTS_IN_LIST" xml:space="preserve">
-    <value>Ingredientes duplicados não são permitidos na lista.</value>
+    <value>Não são permitidos ingredientes duplicados na lista.</value>
   </data>
   <data name="EMAIL_ALREADY_REGISTERED" xml:space="preserve">
-    <value>E-mail já registrado na plataforma.</value>
+    <value>E-mail já registado na plataforma</value>
   </data>
   <data name="EMAIL_EMPTY" xml:space="preserve">
-    <value>O e-mail não pode estar vazio.</value>
+    <value>O correio eletrónico não pode estar vazio.</value>
   </data>
   <data name="EMAIL_INVALID" xml:space="preserve">
-    <value>O e-mail é inválido.</value>
+    <value>O correio eletrónico é inválido.</value>
   </data>
   <data name="EMAIL_OR_PASSWORD_INVALID" xml:space="preserve">
-    <value>E-mail e/ou senha inválidos.</value>
+    <value>E-mail e/ou palavra-passe inválidos.</value>
   </data>
   <data name="EXPIRED_CODE" xml:space="preserve">
     <value>O código expirou.</value>
   </data>
   <data name="EXPIRED_SESSION" xml:space="preserve">
-    <value>Sua sessão expirou. Faça login novamente para continuar.</value>
+    <value>A sua sessão expirou. Inicie sessão novamente para continuar.</value>
   </data>
   <data name="GENERATE_ONE_RECIPE_PER_DAY" xml:space="preserve">
-    <value>Desculpe, mas você só pode gerar uma receita por dia. Volte amanhã!</value>
+    <value>Lamento, mas só pode gerar uma receita por dia. Volte amanhã!</value>
   </data>
   <data name="INGREDIENT_EMPTY" xml:space="preserve">
-    <value>O ingrediente foi deixado em branco; forneça um valor válido.</value>
+    <value>O ingrediente está vazio, por favor indique um valor válido.</value>
   </data>
   <data name="INGREDIENT_NOT_FOLLOWING_PATTERN" xml:space="preserve">
-    <value>Formato de ingrediente inválido. Verifique se o ingrediente segue nosso padrão.</value>
+    <value>Formato de ingrediente inválido. Certifique-se de que o ingrediente segue o nosso padrão.</value>
   </data>
   <data name="INSTRUCTION_EMPTY" xml:space="preserve">
-    <value>A instrução foi deixada em branco; forneça uma instrução válida.</value>
+    <value>A instrução foi deixada em branco, por favor, forneça uma instrução válida.</value>
   </data>
   <data name="INSTRUCTION_EXCEEDS_LIMIT_CHARACTERS" xml:space="preserve">
     <value>A instrução excede o limite máximo de 2000 caracteres.</value>
@@ -178,28 +178,28 @@
     <value>Número inválido de ingredientes. A lista deve conter entre 1 e 5 ingredientes.</value>
   </data>
   <data name="INVALID_PASSWORD" xml:space="preserve">
-    <value>A senha deve ter mais de 6 caracteres.</value>
+    <value>A palavra-passe deve ter mais de 6 caracteres.</value>
   </data>
   <data name="INVALID_SESSION" xml:space="preserve">
-    <value>Não foi possível encontrar uma sessão válida. Faça login para acessar esse recurso.</value>
+    <value>Não foi possível encontrar uma sessão válida. Inicie sessão para aceder a esta funcionalidade.</value>
   </data>
   <data name="NAME_EMPTY" xml:space="preserve">
     <value>O nome não pode estar vazio.</value>
   </data>
   <data name="NON_NEGATIVE_INSTRUCTION_STEP" xml:space="preserve">
-    <value>Use um valor não negativo para a etapa de instrução.</value>
+    <value>Utilizar um valor não negativo para o passo de instrução.</value>
   </data>
   <data name="NO_TOKEN" xml:space="preserve">
-    <value>A solicitação não tem token.</value>
+    <value>O pedido não tem token.</value>
   </data>
   <data name="ONLY_IMAGES_ACCEPTED" xml:space="preserve">
-    <value>Somente imagens (PNG, JPG, JPEG) são aceitas.</value>
+    <value>Só são aceites imagens (PNG, JPG, JPEG).</value>
   </data>
   <data name="PASSWORD_DIFFERENT_CURRENT_PASSWORD" xml:space="preserve">
-    <value>A senha inserida é diferente da senha atual.</value>
+    <value>A palavra-passe introduzida é diferente da palavra-passe atual.</value>
   </data>
   <data name="PASSWORD_EMPTY" xml:space="preserve">
-    <value>A senha não pode estar vazia.</value>
+    <value>A palavra-passe não pode estar vazia.</value>
   </data>
   <data name="RECIPE_NOT_FOUND" xml:space="preserve">
     <value>Não foi possível encontrar a receita.</value>
@@ -208,12 +208,12 @@
     <value>O título da receita foi deixado em branco. Forneça um título válido.</value>
   </data>
   <data name="TWO_OR_MORE_INSTRUCTIONS_SAME_ORDER" xml:space="preserve">
-    <value>Ao adicionar instruções, certifique-se de que cada uma tenha um número de etapa exclusivo. Duas ou mais instruções não podem ter o mesmo pedido.</value>
+    <value>Ao adicionar instruções, certifique-se de que cada uma tem um número de passo único. Duas ou mais instruções não podem ter o mesmo passo.</value>
   </data>
   <data name="UNKNOWN_ERROR" xml:space="preserve">
     <value>Erro desconhecido.</value>
   </data>
   <data name="USER_WITHOUT_PERMISSION_ACCESS_RESOURCE" xml:space="preserve">
-    <value>Você não tem permissão para acessar esse recurso.</value>
+    <value>Você não tem permissão para aceder a este recurso.</value>
   </data>
 </root>

@@ -2,32 +2,33 @@ using System.Globalization;
 
 namespace Recipe.API.Middleware;
 
-public class CultureMiddleware
-{
+public class CultureMiddleware {
 
     private readonly RequestDelegate _next;
 
-    public CultureMiddleware(RequestDelegate next)
-    {
-        _next = next;    
+    public CultureMiddleware (RequestDelegate next) {
+        _next = next;
     }
 
-    public async Task Invoke(HttpContext context){
-        var supportedLanguages = CultureInfo.GetCultures(CultureTypes.AllCultures).ToList();
+    public async Task Invoke (HttpContext context) {
+        var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault ();
 
-        var requestedCulture = context.Request.Headers.AcceptLanguage.FirstOrDefault();
+        if (string.IsNullOrEmpty (requestedCulture)) {
+            await _next (context);
+        } else {
 
-        var cultureInfo = new CultureInfo("en");
+            var supportedLanguages = CultureInfo.GetCultures (CultureTypes.AllCultures).ToList ();
 
-        if(requestedCulture != null
-            && supportedLanguages.Exists(c => c.Name.Equals(requestedCulture)))
-        {
-            cultureInfo = new CultureInfo(requestedCulture);
+            var cultureInfo = new CultureInfo ("en-US");
+
+            if (supportedLanguages.Exists (c => c.Name.Equals (requestedCulture))) {
+                cultureInfo = new CultureInfo (requestedCulture);
+            }
+
+            CultureInfo.CurrentCulture = cultureInfo;
+            CultureInfo.CurrentUICulture = cultureInfo;
+
+            await _next (context);
         }
-
-        CultureInfo.CurrentCulture = cultureInfo;
-        CultureInfo.CurrentUICulture = cultureInfo;
-
-        await _next(context);
     }
 }
