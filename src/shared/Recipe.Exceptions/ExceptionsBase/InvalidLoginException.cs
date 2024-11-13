@@ -1,8 +1,8 @@
 ﻿using System.Net;
 
-namespace MyRecipeBook.Exceptions.ExceptionsBase;
+namespace Recipe.Exceptions.ExceptionsBase;
 
-public class InvalidLoginException : MyRecipeBookException
+public class InvalidLoginException : RecipeException
 {
     public InvalidLoginException() : base(ResourceMessagesException.EMAIL_OR_PASSWORD_INVALID)
     {

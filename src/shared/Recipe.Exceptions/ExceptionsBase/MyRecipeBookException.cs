@@ -1,9 +1,9 @@
 ﻿using System.Net;
 
-namespace MyRecipeBook.Exceptions.ExceptionsBase;
-public abstract class MyRecipeBookException : SystemException
+namespace Recipe.Exceptions.ExceptionsBase;
+public abstract class RecipeException : SystemException
 {
-    protected MyRecipeBookException(string message) : base(message) { }
+    protected RecipeException(string message) : base(message) { }
 
     public abstract IList<string> GetErrorMessages();
     public abstract HttpStatusCode GetStatusCode();

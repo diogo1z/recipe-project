@@ -1,7 +1,7 @@
 ﻿using System.Net;
 
-namespace MyRecipeBook.Exceptions.ExceptionsBase;
-public class ErrorOnValidationException : MyRecipeBookException
+namespace Recipe.Exceptions.ExceptionsBase;
+public class ErrorOnValidationException : RecipeException
 {
     private readonly IList<string> _errorMessages;
 

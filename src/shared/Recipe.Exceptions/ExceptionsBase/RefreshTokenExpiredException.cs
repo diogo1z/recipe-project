@@ -1,7 +1,7 @@
 ﻿using System.Net;
 
-namespace MyRecipeBook.Exceptions.ExceptionsBase;
-public class RefreshTokenExpiredException : MyRecipeBookException
+namespace Recipe.Exceptions.ExceptionsBase;
+public class RefreshTokenExpiredException : RecipeException
 {
     public RefreshTokenExpiredException() : base(ResourceMessagesException.INVALID_SESSION)
     {

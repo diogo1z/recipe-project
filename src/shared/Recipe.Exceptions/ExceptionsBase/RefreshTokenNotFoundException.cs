@@ -1,7 +1,7 @@
 ﻿using System.Net;
 
-namespace MyRecipeBook.Exceptions.ExceptionsBase;
-public class RefreshTokenNotFoundException : MyRecipeBookException
+namespace Recipe.Exceptions.ExceptionsBase;
+public class RefreshTokenNotFoundException : RecipeException
 {
     public RefreshTokenNotFoundException() : base(ResourceMessagesException.EXPIRED_SESSION)
     {

@@ -39,7 +39,7 @@ namespace Recipe.Exceptions {
         public static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("MyRecipeBook.Exceptions.ResourceMessagesException", typeof(ResourceMessagesException).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("Recipe.Exceptions.ResourceMessagesException", typeof(ResourceMessagesException).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

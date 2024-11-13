@@ -1,7 +1,7 @@
 ﻿using System.Net;
 
-namespace MyRecipeBook.Exceptions.ExceptionsBase;
-public class UnauthorizedException : MyRecipeBookException
+namespace Recipe.Exceptions.ExceptionsBase;
+public class UnauthorizedException : RecipeException
 {
     public UnauthorizedException(string message) : base(message)
     {

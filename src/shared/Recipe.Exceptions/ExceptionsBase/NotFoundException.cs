@@ -1,7 +1,7 @@
 ﻿using System.Net;
 
-namespace MyRecipeBook.Exceptions.ExceptionsBase;
-public class NotFoundException : MyRecipeBookException
+namespace Recipe.Exceptions.ExceptionsBase;
+public class NotFoundException : RecipeException
 {
     public NotFoundException(string message) : base(message)
     {
