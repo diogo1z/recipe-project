@@ -8,7 +8,7 @@ public class InvalidLoginException : RecipeException
     {
     }
 
-    public override IList<string> GetErrorMessages() => [Message];
+    public override IList<string> GetErrorMessages() => new List<string> { Message };
 
     public override HttpStatusCode GetStatusCode() => HttpStatusCode.Unauthorized;
 }
